@@ -123,6 +123,90 @@
   opacity: 0.9;
 }
 
+.burgers-page {
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 14px 14px 24px;
+  position: relative;
+  direction: ltr;
+  animation: fade-in 0.45s ease both;
+}
+
+.burgers-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  color: #161616;
+  font-size: 46px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.burgers-grid {
+  margin-top: 58px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  row-gap: 22px;
+  column-gap: 30px;
+}
+
+.burger-card {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.burger-image-wrap {
+  width: 74px;
+  height: 74px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.burger-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.burger-name {
+  color: #ef3434;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: 0;
+  text-align: center;
+  width: 110px;
+  max-width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-transform: none;
+}
+
+@media (max-width: 420px) {
+  .burgers-grid {
+    column-gap: 24px;
+  }
+
+  .burger-name {
+    font-size: 13px;
+    width: 104px;
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;

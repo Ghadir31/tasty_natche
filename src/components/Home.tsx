@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom'
+
 import burger from '../assets/images/home-menu/hamburger.png'
 import potato from '../assets/images/home-menu/potatoe.png'
 import salad from '../assets/images/home-menu/salad.png'
@@ -18,11 +20,18 @@ const menuItems = [
 ]
 
 function Home() {
+  const navigate = useNavigate()
+
   return (
     <>
       <section className="menu-card" aria-label="قائمة الأقسام">
-        {menuItems.map((item) => (
-          <button className="menu-row" type="button" key={item.label}>
+        {menuItems.map((item, index) => (
+          <button
+            className="menu-row"
+            type="button"
+            key={item.label}
+            onClick={index === 0 ? () => navigate('/burgers') : undefined}
+          >
             <span className="menu-icon-wrap">
               <img src={item.image} alt="" aria-hidden="true" />
             </span>
