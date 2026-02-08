@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   font-family: "Tajawal", "Cairo", "Noto Kufi Arabic", sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -33,31 +33,6 @@ body {
   min-height: 100vh;
   background-color: var(--color-bg);
   color: var(--color-text);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --color-bg: #151311;
-    --color-text: #eee8df;
-    --color-surface: #23201d;
-    --color-surface-muted: #2f2b27;
-    --color-border-soft: rgba(255, 255, 255, 0.08);
-    --color-border-strong: rgba(255, 255, 255, 0.16);
-    --color-shadow: rgba(0, 0, 0, 0.38);
-    --color-menu-line: #f4ece1;
-    --color-menu-chevron: #f0e6db;
-    --color-menu-hover: rgba(255, 255, 255, 0.06);
-    --color-accent-red: rgba(255, 105, 105, 0.22);
-    --color-accent-orange: rgba(255, 186, 107, 0.2);
-    color: var(--color-text);
-    background-color: var(--color-bg);
-  }
-
-  body {
-    background-color: var(--color-bg);
-    color: var(--color-text);
-  }
 }
 
 img {

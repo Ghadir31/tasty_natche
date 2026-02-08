@@ -11,12 +11,6 @@
     var(--color-bg);
 }
 
-@media (prefers-color-scheme: dark) {
-  .app {
-    background: var(--color-bg);
-  }
-}
-
 .top-bar {
   width: min(360px, 100%);
   display: flex;
