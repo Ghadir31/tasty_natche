@@ -23,7 +23,7 @@ function BurgersMenu() {
       <div className="burgers-grid">
         {hamburgers.map((item) => (
           <button
-            className="burger-card"
+            className={`burger-card ${item.id === 'beef-deluxe-natche' ? 'burger-card--framed' : ''}`}
             type="button"
             key={item.id}
             onClick={() => handleItemClick(item.id)}

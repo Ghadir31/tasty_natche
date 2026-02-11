@@ -6,6 +6,7 @@ type MenuItemDetailsProps = {
   introDescription?: string
   description: string
   price: string
+  price2?: string
   orderLabel?: string
   onBack?: () => void
   onOrder?: () => void
@@ -19,6 +20,7 @@ function MenuItemDetails({
   introDescription,
   description,
   price,
+  price2,
   orderLabel = 'Order now',
   onBack,
   onOrder,
@@ -52,11 +54,22 @@ function MenuItemDetails({
           {description}
         </p>
 
-        <div className="menu-item-details__cta-row">
-          <button type="button" className="menu-item-details__order-btn" onClick={onOrder}>
-            {orderLabel}
-          </button>
-          <strong className="menu-item-details__price">{price}</strong>
+        <div className="menu-item-details__cta-list">
+          <div className="menu-item-details__cta-row">
+            <button type="button" className="menu-item-details__order-btn" onClick={onOrder}>
+              {orderLabel}
+            </button>
+            <strong className="menu-item-details__price">{price}</strong>
+          </div>
+
+          {price2 ? (
+            <div className="menu-item-details__cta-row menu-item-details__cta-row--secondary">
+              <button type="button" className="menu-item-details__order-btn" onClick={onOrder}>
+                {orderLabel}
+              </button>
+              <strong className="menu-item-details__price">{price2}</strong>
+            </div>
+          ) : null}
         </div>
       </div>
 
