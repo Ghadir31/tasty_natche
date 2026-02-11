@@ -21,9 +21,11 @@ function BurgerDetailsPage() {
     <MenuItemDetails
       title={burger.title}
       imageSrc={burger.detailsImage}
+      className={burger.className}
       introDescription={burger.introDescription}
       description={burger.description}
       price={burger.price}
+      price2={burger.price2}
       descriptionDir="rtl"
       onBack={() => navigate('/burgers')}
     />

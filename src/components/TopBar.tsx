@@ -48,7 +48,9 @@ function TopBar() {
   return (
     <>
       <header className="top-bar">
-        <img className="brand" src={logoN} alt="Logo" />
+        <button className="brand-button" type="button" aria-label="Go to homepage" onClick={handleGoHome}>
+          <img className="brand" src={logoN} alt="Logo" />
+        </button>
         <button className="menu-button" type="button" aria-label="Open navigation menu" onClick={openMenu}>
           <span />
           <span />

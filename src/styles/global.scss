@@ -112,9 +112,9 @@ button {
   margin-top: 18px;
   margin-bottom: 0px;
   color: #202020;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.3;
   text-align: right;
 }
 
@@ -122,14 +122,20 @@ button {
   margin-top: 10px;
   color: #111111;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.35;
   text-align: right;
+  margin-bottom: 40px;
 }
 
+.menu-item-details__cta-list {
+  margin-top: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
 
 .menu-item-details__cta-row {
-  margin-top: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,7 +149,7 @@ button {
   border: none;
   background-color: #efd742;
   color: #f3252e;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   cursor: pointer;
   padding: 0 16px;
@@ -151,11 +157,39 @@ button {
 
 .menu-item-details__price {
   color: #f3252e;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1;
 }
 
+.price-small .menu-item-details__cta-row {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+
+.price-small .menu-item-details__order-btn {
+  min-width: 110px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: #efd742;
+  color: #f3252e;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 16px;
+}
+
+.price-small .menu-item-details__price {
+  color: #f3252e;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+}
 .menu-item-details__hearts {
   margin-top: 0px;
   margin-right: 20px;
@@ -169,6 +203,41 @@ button {
   width: min(220px, 70%);
   height: auto;
   object-fit: contain;
+}
+
+.salad-details {
+  background-color: #ffffff;
+}
+
+.salad-details .menu-items-details__inner-content {
+  padding-top: 42px;
+}
+
+.salad-details .menu-item-details__title {
+  color: #121212;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 18px;
+}
+
+.salad-details .menu-item-details__image {
+  width: min(300px, 90%);
+}
+
+.salad-details .menu-item-details__description {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.45;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.salad-details .menu-item-details__cta-list {
+  margin-top: 22px;
+}
+
+.salad-details .menu-item-details__hearts {
+  display: none;
 }
 
 .app {
@@ -194,6 +263,15 @@ button {
   width: 44px;
   height: 44px;
   object-fit: contain;
+}
+
+.brand-button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  line-height: 0;
 }
 
 .menu-button {
@@ -379,7 +457,7 @@ button {
 .burgers-page {
   width: min(360px, 100%);
   min-height: calc(100vh - 72px);
-  background: #f1f1f1;
+  background: #ffffff;
   border-radius: 10px;
   padding: 14px 14px 24px;
   position: relative;
@@ -395,7 +473,7 @@ button {
   height: 32px;
   border: 2px solid #181818;
   border-radius: 999px;
-  background: #f1f1f1;
+  background: #ffffff;
   cursor: pointer;
   padding: 0;
   display: grid;
@@ -434,6 +512,7 @@ button {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   row-gap: 22px;
   column-gap: 30px;
+  margin-bottom: 10px;
 }
 
 .burger-card {
@@ -453,6 +532,13 @@ button {
   display: grid;
   place-items: center;
   overflow: hidden;
+}
+
+.burger-card--framed .burger-image-wrap {
+  border: 2px solid #ef3434;
+  border-radius: 18px;
+  background: #ffffff;
+  padding-left: 3px;
 }
 
 .burger-image-wrap img {
@@ -486,6 +572,410 @@ button {
     font-size: 13px;
     width: 104px;
   }
+}
+
+.potatoes-page {
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px 14px 24px;
+  position: relative;
+  direction: rtl;
+  animation: fade-in 0.45s ease both;
+}
+
+.potatoes-list {
+  margin-top: 58px;
+  display: grid;
+  gap: 18px;
+}
+
+.potato-card {
+  background: #ffffff;
+  border: 1px solid rgba(239, 52, 52, 0.16);
+  border-radius: 16px;
+  padding: 14px 14px 12px;
+  text-align: center;
+}
+
+.potato-image-wrap {
+  width: 118px;
+  height: 92px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+.potato-image-wrap.is-small img {
+  width: 78%;
+}
+
+.potato-image-wrap img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.potato-title {
+  margin: 8px 0 4px;
+  color: #ef3434;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+.potato-cta-row {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.potato-order-btn {
+  min-width: 120px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: #efd742;
+  color: #f3252e;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 16px;
+}
+
+.potato-price {
+  margin: 0;
+  margin-right: 5px;
+  color: #ef3434;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.salads-page {
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px 0 24px;
+  position: relative;
+  direction: rtl;
+  animation: fade-in 0.45s ease both;
+}
+
+.salads-list {
+  margin-top: 58px;
+  border-top: 1px solid #2f2f2f;
+}
+
+.salad-row {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #2f2f2f;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  min-height: 64px;
+  padding: 8px 10px;
+  cursor: pointer;
+  direction: rtl;
+}
+
+.salad-row__arrow {
+  font-size: 30px;
+  line-height: 1;
+  margin-top: 5px;
+  color: #1a1a1a;
+  transform: rotate(180deg)
+}
+
+.salad-row__title {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #111111;
+  font-weight: 700;
+  text-align: right;
+  direction: rtl;
+}
+
+.salad-row__icon-wrap {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+}
+
+.salad-row__icon-wrap img {
+  width: 35px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.sauces-page {
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px 0 24px;
+  position: relative;
+  direction: ltr;
+  animation: fade-in 0.45s ease both;
+}
+
+.sauces-list {
+  margin-top: 58px;
+}
+
+.sauce-row {
+  min-height: 82px;
+  border-bottom: 1px solid #e7d2d2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+}
+
+.sauce-row__price {
+  display: inline-block;
+  height: auto;
+  width: 80px;
+  color: #f3252e;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  background: transparent;
+}
+
+.sauce-row__info{
+ display: flex;
+ align-items: center;
+ justify-content: end;
+}
+
+.sauce-row__title {
+  color: #101010;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: right;
+  min-width: 100px;
+  padding-right: 5px;
+}
+
+.sauce-row__image-wrap {
+  width: 78px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+}
+
+.sauce-row__image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.drinks-page {
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px 0 24px;
+  position: relative;
+  direction: rtl;
+  animation: fade-in 0.45s ease both;
+}
+
+.drinks-size-pricing {
+  margin-top: 12px;
+  padding: 0 16px;
+}
+
+.drinks-price-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  align-items: center;
+  column-gap: 14px;
+  margin-bottom: 16px;
+  direction: ltr;
+}
+
+.drinks-order-btn {
+  height: 30px;
+  margin-top: 30px;
+  border-radius: 8px;
+  border: none;
+  background-color: #efd742;
+  color: #f3252e;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.drinks-price-meta {
+  direction: rtl;
+  text-align: right;
+}
+
+.drinks-size-label {
+  margin: 0;
+  color: #101010;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.drinks-size-price {
+  margin: 2px 0 0;
+  color: #f3252e;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.drinks-list {
+  margin-top: 58px;
+}
+
+.drink-row {
+  min-height: 82px;
+  border-bottom: 1px solid #e7bfbf;
+  display: grid;
+  grid-template-columns: 1fr 94px;
+  align-items: center;
+  padding: 8px 10px;
+  direction: ltr;
+}
+
+.drink-row__title {
+  margin: 0;
+  color: #121212;
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.drink-row__image-wrap {
+  width: 64px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+
+.drink-row__image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.kids-page {
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px 0 24px;
+  position: relative;
+  direction: ltr;
+  animation: fade-in 0.45s ease both;
+}
+
+.kids-list {
+  margin-top: 58px;
+  border-top: 1px solid #d1cbcb;
+}
+
+.kids-row {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #dfd7d7;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: 26px 1fr 118px;
+  align-items: center;
+  gap: 8px;
+  min-height: 96px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.kids-row__arrow {
+  font-size: 30px;
+  line-height: 1;
+  color: #1a1a1a;
+}
+
+.kids-row__title {
+  color: #ef3434;
+  max-width: 180px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.kids-row__image-wrap {
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-items: center;
+}
+
+.kids-row__image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.kids-hearts {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 180px;
+}
+
+.kids-hearts img {
+  width: min(220px, 70%);
+  height: auto;
+  object-fit: contain;
+}
+
+.kids-details {
+  background-color: #ffffff;
+}
+
+.kids-details .menu-item-details__title {
+  color: #111111;
+  text-align: left;
+}
+
+.kids-details .menu-item-details__price {
+  font-size: 24px;
+}
+
+.kids-details .menu-item-details__description {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.kids-details .menu-item-details__intro-description {
+  text-align: center;
+}
+
+.kids-details .menu-item-details__description:empty {
+  display: none;
 }
 
 @keyframes fade-in {
