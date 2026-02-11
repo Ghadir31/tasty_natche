@@ -24,6 +24,7 @@ function Home() {
     0: '/burgers',
     1: '/potatoes',
     2: '/salads',
+    3: '/drinks',
     4: '/sauces',
   }
 

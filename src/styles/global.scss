@@ -784,6 +784,101 @@ button {
   object-fit: contain;
 }
 
+.drinks-page {
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px 0 24px;
+  position: relative;
+  direction: rtl;
+  animation: fade-in 0.45s ease both;
+}
+
+.drinks-size-pricing {
+  margin-top: 12px;
+  padding: 0 16px;
+}
+
+.drinks-price-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  align-items: center;
+  column-gap: 14px;
+  margin-bottom: 16px;
+  direction: ltr;
+}
+
+.drinks-order-btn {
+  height: 30px;
+  margin-top: 30px;
+  border-radius: 8px;
+  border: none;
+  background-color: #efd742;
+  color: #f3252e;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.drinks-price-meta {
+  direction: rtl;
+  text-align: right;
+}
+
+.drinks-size-label {
+  margin: 0;
+  color: #101010;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.drinks-size-price {
+  margin: 2px 0 0;
+  color: #f3252e;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.drinks-list {
+  margin-top: 58px;
+}
+
+.drink-row {
+  min-height: 82px;
+  border-bottom: 1px solid #e7bfbf;
+  display: grid;
+  grid-template-columns: 1fr 94px;
+  align-items: center;
+  padding: 8px 10px;
+  direction: ltr;
+}
+
+.drink-row__title {
+  margin: 0;
+  color: #121212;
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.drink-row__image-wrap {
+  width: 64px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+
+.drink-row__image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
