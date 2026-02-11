@@ -24,6 +24,7 @@ function Home() {
   const routeByIndex: Record<number, string> = {
     0: '/burgers',
     1: '/potatoes',
+    2: '/salads',
   }
 
   return (

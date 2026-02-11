@@ -3,6 +3,8 @@ import BurgerDetailsPage from './components/BurgerDetailsPage'
 import BurgersMenu from './components/BurgersMenu'
 import Home from './components/Home'
 import PotatoesMenu from './components/PotatoesMenu'
+import SaladItemPage from './components/SaladItemPage'
+import SaladsMenu from './components/SaladsMenu'
 import TopBar from './components/TopBar'
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
           <Route path="/burgers" element={<BurgersMenu />} />
           <Route path="/burgers/:burgerId" element={<BurgerDetailsPage />} />
           <Route path="/potatoes" element={<PotatoesMenu />} />
+          <Route path="/salads" element={<SaladsMenu />} />
+          <Route path="/salads/:saladId" element={<SaladItemPage />} />
         </Routes>
       </div>
     </BrowserRouter>

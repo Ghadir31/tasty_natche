@@ -128,9 +128,14 @@ button {
   margin-bottom: 40px;
 }
 
+.menu-item-details__cta-list {
+  margin-top: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
 
 .menu-item-details__cta-row {
-  margin-top: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,6 +203,41 @@ button {
   width: min(220px, 70%);
   height: auto;
   object-fit: contain;
+}
+
+.salad-details {
+  background-color: #ffffff;
+}
+
+.salad-details .menu-items-details__inner-content {
+  padding-top: 42px;
+}
+
+.salad-details .menu-item-details__title {
+  color: #121212;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 18px;
+}
+
+.salad-details .menu-item-details__image {
+  width: min(300px, 90%);
+}
+
+.salad-details .menu-item-details__description {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.45;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.salad-details .menu-item-details__cta-list {
+  margin-top: 22px;
+}
+
+.salad-details .menu-item-details__hearts {
+  display: none;
 }
 
 .app {
@@ -417,7 +457,7 @@ button {
 .burgers-page {
   width: min(360px, 100%);
   min-height: calc(100vh - 72px);
-  background: #f1f1f1;
+  background: #ffffff;
   border-radius: 10px;
   padding: 14px 14px 24px;
   position: relative;
@@ -433,7 +473,7 @@ button {
   height: 32px;
   border: 2px solid #181818;
   border-radius: 999px;
-  background: #f1f1f1;
+  background: #ffffff;
   cursor: pointer;
   padding: 0;
   display: grid;
@@ -614,6 +654,69 @@ button {
   font-size: 25px;
   font-weight: 700;
   line-height: 1;
+}
+
+.salads-page {
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px 0 24px;
+  position: relative;
+  direction: rtl;
+  animation: fade-in 0.45s ease both;
+}
+
+.salads-list {
+  margin-top: 58px;
+  border-top: 1px solid #2f2f2f;
+}
+
+.salad-row {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #2f2f2f;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  min-height: 64px;
+  padding: 8px 10px;
+  cursor: pointer;
+  direction: rtl;
+}
+
+.salad-row__arrow {
+  font-size: 30px;
+  line-height: 1;
+  margin-top: 5px;
+  color: #1a1a1a;
+  transform: rotate(180deg)
+}
+
+.salad-row__title {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #111111;
+  font-weight: 700;
+  text-align: right;
+  direction: rtl;
+}
+
+.salad-row__icon-wrap {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+}
+
+.salad-row__icon-wrap img {
+  width: 35px;
+  height: 40px;
+  object-fit: contain;
 }
 
 @keyframes fade-in {
