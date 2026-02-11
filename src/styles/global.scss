@@ -1,3 +1,176 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+
+:root {
+  color-scheme: light;
+  font-family: "Tajawal", "Cairo", "Noto Kufi Arabic", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --color-bg: #ece2d2;
+  --color-text: #1d1c1a;
+  --color-surface: #fffdf8;
+  --color-surface-muted: #f4ede2;
+  --color-border-soft: rgba(71, 45, 23, 0.12);
+  --color-border-strong: rgba(71, 45, 23, 0.2);
+  --color-shadow: rgba(71, 45, 23, 0.14);
+  --color-menu-line: #222222;
+  --color-menu-chevron: #2b2b2b;
+  --color-menu-hover: rgba(71, 45, 23, 0.06);
+  --color-accent-red: rgba(255, 90, 90, 0.12);
+  --color-accent-orange: rgba(255, 180, 90, 0.12);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+}
+
+.menu-item-details {
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 18px 18px 24px;
+  direction: ltr;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item-details__top-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-item-details__back-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 2px solid #181818;
+  background: transparent;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.menu-item-details__back-icon {
+  width: 9px;
+  height: 9px;
+  border-top: 2.5px solid #181818;
+  border-left: 2.5px solid #181818;
+  transform: rotate(135deg) translateX(1.2px) translateY(0px);
+  border-radius: 1px;
+}
+
+.menu-items-details__inner-content{
+  padding: 20px;
+}
+
+.menu-item-details__title {
+  margin-top: 26px;
+  color: #f3252e;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.menu-item-details__image-wrap {
+  margin-top: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.menu-item-details__image {
+  width: min(260px, 70%);
+  height: auto;
+  object-fit: contain;
+}
+
+.menu-item-details__intro-description {
+  margin-top: 18px;
+  margin-bottom: 0px;
+  color: #202020;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: right;
+}
+
+.menu-item-details__description {
+  margin-top: 10px;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: right;
+}
+
+
+.menu-item-details__cta-row {
+  margin-top: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.menu-item-details__order-btn {
+  min-width: 120px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: #efd742;
+  color: #f3252e;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 16px;
+}
+
+.menu-item-details__price {
+  color: #f3252e;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.menu-item-details__hearts {
+  margin-top: 0px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 170px;
+}
+
+.menu-item-details__hearts-image {
+  width: min(220px, 70%);
+  height: auto;
+  object-fit: contain;
+}
+
 .app {
   min-height: 100vh;
   padding: 24px 18px 36px;
@@ -216,15 +389,43 @@
 
 .burgers-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  border: none;
-  background: transparent;
-  color: #161616;
-  font-size: 46px;
-  line-height: 1;
+  top: 18px;
+  right: 18px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #181818;
+  border-radius: 999px;
+  background: #f1f1f1;
   cursor: pointer;
   padding: 0;
+  display: grid;
+  place-items: center;
+}
+
+.burgers-close-icon {
+  position: relative;
+  display: block;
+}
+
+.burgers-close-icon::before,
+.burgers-close-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 1.5px;
+  background: #181818;
+  border-radius: 999px;
+  transform-origin: center;
+}
+
+.burgers-close-icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.burgers-close-icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .burgers-grid {
@@ -336,3 +537,4 @@
     grid-template-columns: 60px 1fr 34px;
   }
 }
+
