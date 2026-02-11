@@ -5,6 +5,7 @@ import Home from './components/Home'
 import PotatoesMenu from './components/PotatoesMenu'
 import SaladItemPage from './components/SaladItemPage'
 import SaladsMenu from './components/SaladsMenu'
+import SaucesMenu from './components/SaucesMenu'
 import TopBar from './components/TopBar'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/potatoes" element={<PotatoesMenu />} />
           <Route path="/salads" element={<SaladsMenu />} />
           <Route path="/salads/:saladId" element={<SaladItemPage />} />
+          <Route path="/sauces" element={<SaucesMenu />} />
         </Routes>
       </div>
     </BrowserRouter>

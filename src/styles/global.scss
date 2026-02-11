@@ -719,6 +719,71 @@ button {
   object-fit: contain;
 }
 
+.sauces-page {
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px 0 24px;
+  position: relative;
+  direction: ltr;
+  animation: fade-in 0.45s ease both;
+}
+
+.sauces-list {
+  margin-top: 58px;
+}
+
+.sauce-row {
+  min-height: 82px;
+  border-bottom: 1px solid #e7d2d2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+}
+
+.sauce-row__price {
+  display: inline-block;
+  height: auto;
+  width: 80px;
+  color: #f3252e;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  background: transparent;
+}
+
+.sauce-row__info{
+ display: flex;
+ align-items: center;
+ justify-content: end;
+}
+
+.sauce-row__title {
+  color: #101010;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: right;
+  min-width: 100px;
+  padding-right: 5px;
+}
+
+.sauce-row__image-wrap {
+  width: 78px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+}
+
+.sauce-row__image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;

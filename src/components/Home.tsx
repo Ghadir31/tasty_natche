@@ -4,7 +4,6 @@ import burger from '../assets/images/home-menu/hamburger.png'
 import potato from '../assets/images/home-menu/potatoe.png'
 import salad from '../assets/images/home-menu/salad.png'
 import drink from '../assets/images/home-menu/dring.png'
-import dessert from '../assets/images/home-menu/dessert.png'
 import sauce from '../assets/images/home-menu/sauce.png'
 import kids from '../assets/images/home-menu/kids_meal.png'
 import hearts from '../assets/images/home-menu/hearts.png'
@@ -14,7 +13,7 @@ const menuItems = [
   { label: 'البطاطا', image: potato },
   { label: 'السلطات', image: salad },
   { label: 'المشروبات', image: drink },
-  { label: 'الحلويات', image: dessert },
+  // { label: 'الحلويات', image: dessert },
   { label: 'الصلصات', image: sauce },
   { label: 'وجبة للاطفال', image: kids },
 ]
@@ -25,6 +24,7 @@ function Home() {
     0: '/burgers',
     1: '/potatoes',
     2: '/salads',
+    4: '/sauces',
   }
 
   return (
