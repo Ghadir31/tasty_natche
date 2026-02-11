@@ -149,7 +149,7 @@ button {
   border: none;
   background-color: #efd742;
   color: #f3252e;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   cursor: pointer;
   padding: 0 16px;
@@ -157,7 +157,7 @@ button {
 
 .menu-item-details__price {
   color: #f3252e;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1;
 }
@@ -877,6 +877,105 @@ button {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.kids-page {
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px 0 24px;
+  position: relative;
+  direction: ltr;
+  animation: fade-in 0.45s ease both;
+}
+
+.kids-list {
+  margin-top: 58px;
+  border-top: 1px solid #d1cbcb;
+}
+
+.kids-row {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #dfd7d7;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  grid-template-columns: 26px 1fr 118px;
+  align-items: center;
+  gap: 8px;
+  min-height: 96px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.kids-row__arrow {
+  font-size: 30px;
+  line-height: 1;
+  color: #1a1a1a;
+}
+
+.kids-row__title {
+  color: #ef3434;
+  max-width: 180px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.kids-row__image-wrap {
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-items: center;
+}
+
+.kids-row__image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.kids-hearts {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 180px;
+}
+
+.kids-hearts img {
+  width: min(220px, 70%);
+  height: auto;
+  object-fit: contain;
+}
+
+.kids-details {
+  background-color: #ffffff;
+}
+
+.kids-details .menu-item-details__title {
+  color: #111111;
+  text-align: left;
+}
+
+.kids-details .menu-item-details__price {
+  font-size: 24px;
+}
+
+.kids-details .menu-item-details__description {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.kids-details .menu-item-details__intro-description {
+  text-align: center;
+}
+
+.kids-details .menu-item-details__description:empty {
+  display: none;
 }
 
 @keyframes fade-in {

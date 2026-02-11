@@ -26,6 +26,7 @@ function Home() {
     2: '/salads',
     3: '/drinks',
     4: '/sauces',
+    5: '/kids',
   }
 
   return (

@@ -3,6 +3,8 @@ import BurgerDetailsPage from './components/BurgerDetailsPage'
 import BurgersMenu from './components/BurgersMenu'
 import DrinksMenu from './components/DrinksMenu'
 import Home from './components/Home'
+import KidsMealPage from './components/KidsMealPage'
+import KidsMenu from './components/KidsMenu'
 import PotatoesMenu from './components/PotatoesMenu'
 import SaladItemPage from './components/SaladItemPage'
 import SaladsMenu from './components/SaladsMenu'
@@ -20,6 +22,8 @@ function App() {
           <Route path="/burgers/:burgerId" element={<BurgerDetailsPage />} />
           <Route path="/potatoes" element={<PotatoesMenu />} />
           <Route path="/drinks" element={<DrinksMenu />} />
+          <Route path="/kids" element={<KidsMenu />} />
+          <Route path="/kids/:kidsId" element={<KidsMealPage />} />
           <Route path="/salads" element={<SaladsMenu />} />
           <Route path="/salads/:saladId" element={<SaladItemPage />} />
           <Route path="/sauces" element={<SaucesMenu />} />
