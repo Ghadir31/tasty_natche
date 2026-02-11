@@ -534,6 +534,88 @@ button {
   }
 }
 
+.potatoes-page {
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 14px 14px 24px;
+  position: relative;
+  direction: rtl;
+  animation: fade-in 0.45s ease both;
+}
+
+.potatoes-list {
+  margin-top: 58px;
+  display: grid;
+  gap: 18px;
+}
+
+.potato-card {
+  background: #ffffff;
+  border: 1px solid rgba(239, 52, 52, 0.16);
+  border-radius: 16px;
+  padding: 14px 14px 12px;
+  text-align: center;
+}
+
+.potato-image-wrap {
+  width: 118px;
+  height: 92px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+.potato-image-wrap.is-small img {
+  width: 78%;
+}
+
+.potato-image-wrap img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.potato-title {
+  margin: 8px 0 4px;
+  color: #ef3434;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+.potato-cta-row {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.potato-order-btn {
+  min-width: 120px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: #efd742;
+  color: #f3252e;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 16px;
+}
+
+.potato-price {
+  margin: 0;
+  margin-right: 5px;
+  color: #ef3434;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;

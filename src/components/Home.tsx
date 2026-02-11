@@ -21,6 +21,10 @@ const menuItems = [
 
 function Home() {
   const navigate = useNavigate()
+  const routeByIndex: Record<number, string> = {
+    0: '/burgers',
+    1: '/potatoes',
+  }
 
   return (
     <>
@@ -30,7 +34,7 @@ function Home() {
             className="menu-row"
             type="button"
             key={item.label}
-            onClick={index === 0 ? () => navigate('/burgers') : undefined}
+            onClick={routeByIndex[index] ? () => navigate(routeByIndex[index]) : undefined}
           >
             <span className="menu-icon-wrap">
               <img src={item.image} alt="" aria-hidden="true" />
