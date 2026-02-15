@@ -2,6 +2,7 @@ import natcheMiniBeefImage from '../assets/images/kids/natche-mini-beef.png'
 import natcheMiniChickenImage from '../assets/images/kids/natche-mini-chicken.png'
 import nuggets4PcsImage from '../assets/images/kids/nuggets-4pcs.png'
 
+
 type KidsMealItem = {
   id: string
   listTitle: string
