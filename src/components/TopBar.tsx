@@ -45,6 +45,16 @@ function TopBar() {
     closeMenu()
   }
 
+  const handleGoAbout = () => {
+    navigate('/about')
+    closeMenu()
+  }
+
+  const handleGoLocation = () => {
+    navigate('/location')
+    closeMenu()
+  }
+
   return (
     <>
       <header className="top-bar">
@@ -71,10 +81,10 @@ function TopBar() {
               <button className="nav-drawer-link" type="button" onClick={handleGoHome}>
                 THE MENU
               </button>
-              <button className="nav-drawer-link" type="button">
+              <button className="nav-drawer-link" type="button" onClick={handleGoAbout}>
                 ABOUT OUR FOOD
               </button>
-              <button className="nav-drawer-link" type="button">
+              <button className="nav-drawer-link" type="button" onClick={handleGoLocation}>
                 LOCATION
               </button>
               <button className="nav-drawer-link" type="button">
