@@ -28,6 +28,11 @@ function MenuItemDetails({
   className,
 }: MenuItemDetailsProps) {
   const rootClassName = ['menu-item-details', className].filter(Boolean).join(' ')
+  const whatsappUrl = 'https://wa.me/96181960888'
+  const handleOrder = () => {
+    window.open(whatsappUrl, '_blank', 'noopener')
+    onOrder?.()
+  }
 
   return (
     <section className={rootClassName} aria-label="Menu item details">
@@ -56,7 +61,7 @@ function MenuItemDetails({
 
         <div className="menu-item-details__cta-list">
           <div className="menu-item-details__cta-row">
-            <button type="button" className="menu-item-details__order-btn" onClick={onOrder}>
+            <button type="button" className="menu-item-details__order-btn" onClick={handleOrder}>
               {orderLabel}
             </button>
             <strong className="menu-item-details__price">{price}</strong>
@@ -64,7 +69,7 @@ function MenuItemDetails({
 
           {price2 ? (
             <div className="menu-item-details__cta-row menu-item-details__cta-row--secondary">
-              <button type="button" className="menu-item-details__order-btn" onClick={onOrder}>
+              <button type="button" className="menu-item-details__order-btn" onClick={handleOrder}>
                 {orderLabel}
               </button>
               <strong className="menu-item-details__price">{price2}</strong>

@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import AboutPage from './components/AboutPage'
+import ContactPage from './components/ContactPage'
 import LocationPage from './components/LocationPage'
 import BurgerDetailsPage from './components/BurgerDetailsPage'
 import BurgersMenu from './components/BurgersMenu'
@@ -17,7 +18,8 @@ function AppContent() {
   const location = useLocation()
   const isAboutPage = location.pathname === '/about'
   const isLocationPage = location.pathname === '/location'
-  const hideTopBar = isAboutPage || isLocationPage
+  const isContactPage = location.pathname === '/contact'
+  const hideTopBar = isAboutPage || isLocationPage || isContactPage
 
   return (
     <div className="app" dir="rtl" lang="ar">
@@ -34,6 +36,7 @@ function AppContent() {
         <Route path="/salads/:saladId" element={<SaladItemPage />} />
         <Route path="/sauces" element={<SaucesMenu />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/location" element={<LocationPage />} />
       </Routes>
     </div>

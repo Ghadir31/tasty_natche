@@ -66,7 +66,7 @@ button {
   width: 32px;
   height: 32px;
   border-radius: 999px;
-  border: 2px solid #181818;
+  border: 2px solid #2f2f2f99;
   background: transparent;
   cursor: pointer;
   display: grid;
@@ -77,8 +77,8 @@ button {
 .menu-item-details__back-icon {
   width: 9px;
   height: 9px;
-  border-top: 2.5px solid #181818;
-  border-left: 2.5px solid #181818;
+  border-top: 2.5px solid #2f2f2f99;
+  border-left: 2.5px solid #2f2f2f99;
   transform: rotate(135deg) translateX(1.2px) translateY(0px);
   border-radius: 1px;
 }
@@ -385,6 +385,36 @@ button {
   animation: fade-in 0.6s ease both;
 }
 
+.menu-contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--color-border-strong);
+  background: #fff7e8;
+}
+
+.menu-contact__icon {
+  width: 24px;
+  height: 24px;
+  color: #25d366;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.menu-contact__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-contact__number {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: 0.4px;
+}
+
 .menu-row {
   width: 100%;
   background: transparent;
@@ -471,7 +501,7 @@ button {
   right: 18px;
   width: 32px;
   height: 32px;
-  border: 2px solid #181818;
+  border: 2px solid #2f2f2f99;
   border-radius: 999px;
   background: #ffffff;
   cursor: pointer;
@@ -493,7 +523,7 @@ button {
   left: 50%;
   width: 16px;
   height: 1.5px;
-  background: #181818;
+  background: #2f2f2f99;
   border-radius: 999px;
   transform-origin: center;
 }
@@ -669,13 +699,13 @@ button {
 
 .salads-list {
   margin-top: 58px;
-  border-top: 1px solid #2f2f2f;
+  border-top: 1px solid #2f2f2f5b;
 }
 
 .salad-row {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #2f2f2f;
+  border-bottom: 1px solid #2f2f2f5b;
   background: transparent;
   display: flex;
   flex-direction: row;
@@ -995,7 +1025,7 @@ button {
 .about-close {
   width: 32px;
   height: 32px;
-  border: 2px solid #181818;
+  border: 2px solid #2f2f2f99;
   border-radius: 999px;
   background: #ffffff;
   cursor: pointer;
@@ -1019,7 +1049,7 @@ button {
   left: 50%;
   width: 16px;
   height: 1.5px;
-  background: #181818;
+  background: #2f2f2f99;
   border-radius: 999px;
   transform-origin: center;
 }
@@ -1066,6 +1096,127 @@ button {
   height: auto;
 }
 
+.contact-page {
+  width: min(360px, 100%);
+  min-height: calc(100vh - 60px);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px 18px 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fade-in 0.45s ease both;
+}
+
+.contact-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #2f2f2f99;
+  border-radius: 999px;
+  background: #ffffff;
+  cursor: pointer;
+  padding: 0;
+  display: grid;
+  place-items: center;
+}
+
+.contact-close-icon {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.contact-close-icon::before,
+.contact-close-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 1.5px;
+  background: #2f2f2f99;
+  border-radius: 999px;
+  transform-origin: center;
+}
+
+.contact-close-icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.contact-close-icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.contact-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.contact-art {
+  position: relative;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+.contact-main {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  height: 400px;
+}
+
+.contact-social-icons{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 4px 0;
+}
+
+.contact-icon-group{
+  width: 100%;
+  position: absolute;
+}
+
+.contact-icon-group.whatsapp{
+  top: 40px;
+  display: flex;
+  justify-content: start;
+}
+
+.contact-icon-group.facebook{
+  top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-icon-group.instagram{
+  top: 60px;
+  display: flex;
+  justify-content: end;
+}
+
+.contact-icon {
+  width: 52px;
+  height: 56px;
+}
+
+.contact-icon--facebook {
+  width: 54px;
+  height: 64px;
+}
+
 .location-page {
   width: min(360px, 100%);
   height: calc(100vh - 60px);
@@ -1084,7 +1235,7 @@ button {
   right: 18px;
   width: 32px;
   height: 32px;
-  border: 2px solid #181818;
+  border: 2px solid #2f2f2f99;
   border-radius: 999px;
   background: #ffffff;
   cursor: pointer;
@@ -1108,7 +1259,7 @@ button {
   left: 50%;
   width: 16px;
   height: 1.5px;
-  background: #181818;
+  background: #2f2f2f99;
   border-radius: 999px;
   transform-origin: center;
 }
