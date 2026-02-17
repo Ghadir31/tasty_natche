@@ -55,6 +55,11 @@ function TopBar() {
     closeMenu()
   }
 
+  const handleGoContact = () => {
+    navigate('/contact')
+    closeMenu()
+  }
+
   return (
     <>
       <header className="top-bar">
@@ -87,7 +92,7 @@ function TopBar() {
               <button className="nav-drawer-link" type="button" onClick={handleGoLocation}>
                 LOCATION
               </button>
-              <button className="nav-drawer-link" type="button">
+              <button className="nav-drawer-link" type="button" onClick={handleGoContact}>
                 CONTACT US
               </button>
             </nav>
