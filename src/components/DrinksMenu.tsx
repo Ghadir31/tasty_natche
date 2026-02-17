@@ -16,6 +16,10 @@ const drinkItems = [
 
 function DrinksMenu() {
   const navigate = useNavigate()
+  const whatsappUrl = 'https://wa.me/96181960888'
+  const handleOrderClick = () => {
+    window.open(whatsappUrl, '_blank', 'noopener')
+  }
 
   return (
     <section className="drinks-page" aria-label="Drinks menu">
@@ -41,7 +45,7 @@ function DrinksMenu() {
 
       <div className="drinks-size-pricing" aria-label="Drink size pricing">
         <div className="drinks-price-row">
-          <button type="button" className="drinks-order-btn">
+          <button type="button" className="drinks-order-btn" onClick={handleOrderClick}>
             Order now
           </button>
           <div className="drinks-price-meta">
@@ -51,7 +55,7 @@ function DrinksMenu() {
         </div>
 
         <div className="drinks-price-row">
-          <button type="button" className="drinks-order-btn">
+          <button type="button" className="drinks-order-btn" onClick={handleOrderClick}>
             Order now
           </button>
           <div className="drinks-price-meta">
