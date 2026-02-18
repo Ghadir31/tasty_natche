@@ -28,7 +28,7 @@ function ContactPage() {
             </a>
             <a
               className="contact-icon-group facebook"
-              href="https://www.facebook.com/natchi.burger"
+              href="https://www.facebook.com/profile.php?id=61587090407602"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit Facebook page"
@@ -37,7 +37,7 @@ function ContactPage() {
             </a>
             <a
               className="contact-icon-group instagram"
-              href="https://www.instagram.com/natchi.burger/"
+              href="https://www.instagram.com/natcheburger/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit Instagram profile"
