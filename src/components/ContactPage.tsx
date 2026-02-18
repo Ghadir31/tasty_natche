@@ -7,6 +7,10 @@ import whatsappIcon from '../assets/images/general/whats-natche.png'
 
 function ContactPage() {
   const navigate = useNavigate()
+  const isMobile = typeof navigator !== 'undefined' && /Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent)
+  const instagramHref = isMobile
+    ? 'instagram://user?username=natcheburger'
+    : 'https://instagram.com/natcheburger/'
 
   return (
     <section className="contact-page" aria-label="Contact us">
@@ -37,7 +41,7 @@ function ContactPage() {
             </a>
             <a
               className="contact-icon-group instagram"
-              href="https://www.instagram.com/natcheburger/"
+              href={instagramHref}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit Instagram profile"
