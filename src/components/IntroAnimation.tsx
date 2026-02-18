@@ -15,7 +15,7 @@ function IntroAnimation({ onComplete }: IntroAnimationProps) {
   useEffect(() => {
     const timer = window.setTimeout(() => {
       onComplete()
-    }, 5000)
+    }, 6500)
 
     return () => {
       window.clearTimeout(timer)
