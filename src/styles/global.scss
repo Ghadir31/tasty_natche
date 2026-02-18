@@ -1205,26 +1205,22 @@ button {
 }
 
 .contact-icon-group{
-  width: 100%;
   position: absolute;
 }
 
 .contact-icon-group.whatsapp{
-  top: 40px;
-  display: flex;
-  justify-content: start;
+  top: 45px;
+  right: 0px;
 }
 
 .contact-icon-group.facebook{
-  top: 30px;
-  display: flex;
-  justify-content: center;
+  top: 20px;
+  right: 100px;
 }
 
 .contact-icon-group.instagram{
-  top: 60px;
-  display: flex;
-  justify-content: end;
+  top: 55px;
+  left: 0px;
 }
 
 .contact-icon {
