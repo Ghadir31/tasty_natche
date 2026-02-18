@@ -32,7 +32,7 @@ function Home() {
   return (
     <>
       <section className="menu-card" aria-label="قائمة الأقسام">
-        <div className="menu-contact" aria-label="Whatsapp number">
+        {/* <div className="menu-contact" aria-label="Whatsapp number">
           <span className="menu-contact__icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
               <path
@@ -44,7 +44,7 @@ function Home() {
           <span className="menu-contact__number" dir="ltr">
             81 960 888
           </span>
-        </div>
+        </div> */}
         {menuItems.map((item, index) => (
           <button
             className="menu-row"

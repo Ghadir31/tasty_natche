@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import AboutPage from './components/AboutPage'
 import ContactPage from './components/ContactPage'
 import LocationPage from './components/LocationPage'
@@ -13,13 +14,33 @@ import SaladItemPage from './components/SaladItemPage'
 import SaladsMenu from './components/SaladsMenu'
 import SaucesMenu from './components/SaucesMenu'
 import TopBar from './components/TopBar'
+import IntroAnimation from './components/IntroAnimation'
 
 function AppContent() {
   const location = useLocation()
+  const [shouldPlayIntro, setShouldPlayIntro] = useState(true)
   const isAboutPage = location.pathname === '/about'
   const isLocationPage = location.pathname === '/location'
   const isContactPage = location.pathname === '/contact'
   const hideTopBar = isAboutPage || isLocationPage || isContactPage
+  const showIntro = shouldPlayIntro && location.pathname === '/'
+
+  useEffect(() => {
+    document.body.classList.toggle('is-intro-active', showIntro)
+    return () => {
+      document.body.classList.remove('is-intro-active')
+    }
+  }, [showIntro])
+
+  if (showIntro) {
+    return (
+      <IntroAnimation
+        onComplete={() => {
+          setShouldPlayIntro(false)
+        }}
+      />
+    )
+  }
 
   return (
     <div className="app" dir="rtl" lang="ar">
@@ -39,6 +60,11 @@ function AppContent() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/location" element={<LocationPage />} />
       </Routes>
+      <footer className="site-footer" aria-label="Footer">
+        <span className="site-footer__text" dir="ltr">
+          WhatsApp: 81 960 888
+        </span>
+      </footer>
     </div>
   )
 }
