@@ -60,6 +60,11 @@ function AppContent() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/location" element={<LocationPage />} />
       </Routes>
+      <footer className="site-footer" aria-label="Footer">
+        <span className="site-footer__text" dir="ltr">
+          WhatsApp: 81 960 888
+        </span>
+      </footer>
     </div>
   )
 }
