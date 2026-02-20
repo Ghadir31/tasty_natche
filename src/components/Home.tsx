@@ -29,6 +29,7 @@ function Home() {
     3: '/drinks',
     4: '/sauces',
     5: '/kids',
+    6: '/offers',
   }
 
   return (

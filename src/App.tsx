@@ -15,6 +15,9 @@ import SaladsMenu from './components/SaladsMenu'
 import SaucesMenu from './components/SaucesMenu'
 import TopBar from './components/TopBar'
 import IntroAnimation from './components/IntroAnimation'
+import OffersMenu from './components/OffersMenu'
+import IftarOfferPage from './components/IftarOfferPage'
+import MaxIftarOfferPage from './components/MaxIftarOfferPage'
 
 function AppContent() {
   const location = useLocation()
@@ -56,6 +59,9 @@ function AppContent() {
         <Route path="/salads" element={<SaladsMenu />} />
         <Route path="/salads/:saladId" element={<SaladItemPage />} />
         <Route path="/sauces" element={<SaucesMenu />} />
+        <Route path="/offers" element={<OffersMenu />} />
+        <Route path="/offers/iftar-meal-offer" element={<IftarOfferPage />} />
+        <Route path="/offers/max-iftar-meal-offer" element={<MaxIftarOfferPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/location" element={<LocationPage />} />

@@ -831,7 +831,7 @@ button {
   align-items: center;
   gap: 8px;
   min-height: 64px;
-  padding: 8px 10px;
+  padding: 8px 10px 8px 20px;
   cursor: pointer;
   direction: rtl;
 }
@@ -866,6 +866,134 @@ button {
   width: 35px;
   height: 40px;
   object-fit: contain;
+}
+
+.offers-page .offers-row__icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: 2px solid #ef3434;
+  background: #ffffff;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.offers-page .offers-row__icon-wrap img {
+  width: 170%;
+  height: 170%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.offer-details-page {
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background: #f81522;
+  border-radius: 10px;
+  padding: 0 16px 24px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.offer-details-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 18px;
+}
+
+.offer-details-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #f4d04f;
+}
+
+.offer-details-back {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: transparent;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.offer-details-back-icon {
+  width: 9px;
+  height: 9px;
+  border-top: 2.5px solid #ffffff;
+  border-left: 2.5px solid #ffffff;
+  transform: rotate(135deg) translateX(1px);
+  border-radius: 1px;
+}
+
+.offer-details-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.offer-details-price {
+  font-size: 30px;
+  font-weight: 800;
+  color: #f4d04f;
+  letter-spacing: 0.6px;
+}
+
+.offer-details-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.offer-details-list li::before {
+  content: "•";
+  color: #f4d04f;
+  margin-left: 8px;
+}
+
+.offer-details-hero {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.offer-details-hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+
+.offer-details-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.offer-details-order {
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  background: #efd742;
+  color: #f3252e;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 16px;
+  cursor: pointer;
 }
 
 .sauces-page {
