@@ -24,13 +24,18 @@ function TopBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isMenuClosing, setIsMenuClosing] = useState(false)
   const [mobileView, setMobileView] = useState<'root' | 'about' | 'location' | 'contact'>('root')
+  const [isMobileViewClosing, setIsMobileViewClosing] = useState(false)
   const navigate = useNavigate()
   const closeTimerRef = useRef<number | null>(null)
+  const mobileViewTimerRef = useRef<number | null>(null)
 
   useEffect(() => {
     return () => {
       if (closeTimerRef.current !== null) {
         window.clearTimeout(closeTimerRef.current)
+      }
+      if (mobileViewTimerRef.current !== null) {
+        window.clearTimeout(mobileViewTimerRef.current)
       }
     }
   }, [])
@@ -44,6 +49,7 @@ function TopBar() {
     setIsMenuClosing(false)
     setIsMenuOpen(true)
     setMobileView('root')
+    setIsMobileViewClosing(false)
   }
 
   const closeMenu = () => {
@@ -56,6 +62,7 @@ function TopBar() {
       setIsMenuOpen(false)
       setIsMenuClosing(false)
       setMobileView('root')
+      setIsMobileViewClosing(false)
       closeTimerRef.current = null
     }, 240)
   }
@@ -81,7 +88,15 @@ function TopBar() {
   }
 
   const handleMobileBack = () => {
-    setMobileView('root')
+    if (isMobileViewClosing) {
+      return
+    }
+    setIsMobileViewClosing(true)
+    mobileViewTimerRef.current = window.setTimeout(() => {
+      setMobileView('root')
+      setIsMobileViewClosing(false)
+      mobileViewTimerRef.current = null
+    }, 240)
   }
 
   const handleMobileHome = () => {
@@ -91,6 +106,7 @@ function TopBar() {
 
   const handleMobileOpenView = (view: 'about' | 'location' | 'contact') => {
     setMobileView(view)
+    setIsMobileViewClosing(false)
   }
 
   const isMobile = typeof navigator !== 'undefined' && /Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent)
@@ -157,7 +173,11 @@ function TopBar() {
                 </button>
               </nav>
             ) : (
-              <div className="nav-drawer-mobile-view" role="region" aria-live="polite">
+              <div
+                className={`nav-drawer-mobile-view ${isMobileViewClosing ? 'is-closing' : 'is-open'}`}
+                role="region"
+                aria-live="polite"
+              >
                 <div className="nav-drawer-mobile-header">
                   <button className="nav-drawer-mobile-back" type="button" onClick={handleMobileBack}>
                     {'\u2039'} Back

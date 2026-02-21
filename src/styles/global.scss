@@ -375,6 +375,11 @@ button {
   background: #ffffff;
   display: flex;
   flex-direction: column;
+  animation: slide-in-right 0.24s ease-out both;
+}
+
+.nav-drawer-mobile-view.is-closing {
+  animation: slide-out-right 0.24s ease-in both;
 }
 
 .nav-drawer-mobile-header {
