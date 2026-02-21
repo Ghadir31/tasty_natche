@@ -18,9 +18,8 @@ const potatoItems = [
 
 function PotatoesMenu() {
   const navigate = useNavigate()
-  const whatsappUrl = 'https://wa.me/96181960888'
-  const handleOrderClick = () => {
-    window.open(whatsappUrl, '_blank', 'noopener')
+  const handleOptionsClick = () => {
+    navigate('/options')
   }
 
   return (
@@ -42,8 +41,8 @@ function PotatoesMenu() {
             </div>
             <h2 className="potato-title">{item.title}</h2>
             <div className="potato-cta-row">
-              <button type="button" className="potato-order-btn" onClick={handleOrderClick}>
-                Order now
+              <button type="button" className="potato-order-btn" onClick={handleOptionsClick}>
+                Options
               </button>
               <div style={{ display: 'flex', flexDirection: 'row-reverse' }}>
                 <p className="potato-price">{item.price}</p>

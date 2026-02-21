@@ -18,6 +18,7 @@ import IntroAnimation from './components/IntroAnimation'
 import OffersMenu from './components/OffersMenu'
 import IftarOfferPage from './components/IftarOfferPage'
 import MaxIftarOfferPage from './components/MaxIftarOfferPage'
+import CustomizationsPage from './components/CustomizationsPage'
 
 function AppContent() {
   const location = useLocation()
@@ -62,6 +63,7 @@ function AppContent() {
         <Route path="/offers" element={<OffersMenu />} />
         <Route path="/offers/iftar-meal-offer" element={<IftarOfferPage />} />
         <Route path="/offers/max-iftar-meal-offer" element={<MaxIftarOfferPage />} />
+        <Route path="/options" element={<CustomizationsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/location" element={<LocationPage />} />

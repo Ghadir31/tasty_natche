@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import heartsDecoration from '../assets/images/brand/hearts-decoration.png'
 
 type MenuItemDetailsProps = {
@@ -21,16 +22,16 @@ function MenuItemDetails({
   description,
   price,
   price2,
-  orderLabel = 'Order now',
+  orderLabel = 'Options',
   onBack,
   onOrder,
   descriptionDir = 'rtl',
   className,
 }: MenuItemDetailsProps) {
   const rootClassName = ['menu-item-details', className].filter(Boolean).join(' ')
-  const whatsappUrl = 'https://wa.me/96181960888'
+  const navigate = useNavigate()
   const handleOrder = () => {
-    window.open(whatsappUrl, '_blank', 'noopener')
+    navigate('/options')
     onOrder?.()
   }
 

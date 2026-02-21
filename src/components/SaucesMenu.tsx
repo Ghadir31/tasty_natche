@@ -43,6 +43,10 @@ function SaucesMenu() {
           </article>
         ))}
       </div>
+
+      <button type="button" className="customizations-order-btn" onClick={() => navigate('/options')}>
+        Options
+      </button>
     </section>
   )
 }
