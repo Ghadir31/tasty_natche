@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom'
 
 import bbqImage from '../assets/images/sauces/BBQ.png'
 import ketchupImage from '../assets/images/sauces/ketchup.png'
-import mayonnaiseImage from '../assets/images/sauces/Mayonnaise.png'
+// import mayonnaiseImage from '../assets/images/sauces/Mayonnaise.png'
 import mustardImage from '../assets/images/sauces/mustard.png'
 import natcheSpecialSauceImage from '../assets/images/sauces/natche-special-sauce.png'
 import tastySauceImage from '../assets/images/sauces/tasty-sauce.png'
@@ -11,7 +11,7 @@ const sauces = [
   { id: 'tasty-sauce', title: 'Tasty sauce', image: tastySauceImage, size:60, margin: 0},
   { id: 'natche-special-sauce', title: 'Natche special sauce', image: natcheSpecialSauceImage, size:70, margin: 0 },
   { id: 'ketchup', title: 'ketchup', image: ketchupImage, size:90, margin: 5 },
-  { id: 'mayonnaise', title: 'mayonnaise', image: mayonnaiseImage, size:60, margin: -10},
+  // { id: 'mayonnaise', title: 'mayonnaise', image: mayonnaiseImage, size:60, margin: -10},
   { id: 'bbq', title: 'BBQ', image: bbqImage, size:60, margin: -5 },
   { id: 'mustard', title: 'Mustard', image: mustardImage, size:60, margin: -8 },
 ]

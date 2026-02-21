@@ -136,7 +136,7 @@ button {
   margin-top: 52px;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
 }
 
 .menu-item-details__cta-row {
@@ -1030,6 +1030,7 @@ button {
   font-weight: 700;
   line-height: 1;
   background: transparent;
+  padding-left: 20px;
 }
 
 .sauce-row__info{

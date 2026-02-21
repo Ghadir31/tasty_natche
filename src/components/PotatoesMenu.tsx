@@ -6,12 +6,12 @@ const potatoItems = [
   {
     id: 'large',
     title: 'البطاطا المقرمشة (كبير)',
-    price: '200,000',
+    price: '270,000',
   },
   {
     id: 'small',
     title: 'البطاطا المقرمشة (صغير)',
-    price: '270,000',
+    price: '200,000',
     isSmallImage: true,
   },
 ]
