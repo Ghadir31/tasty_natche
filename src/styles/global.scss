@@ -1001,6 +1001,63 @@ button {
   cursor: pointer;
 }
 
+.offer-image-page {
+  position: relative;
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.offer-image-back {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.offer-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.offer-image-overlay {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+.offer-image-price {
+  font-size: 24px;
+  font-weight: 800;
+  color: #efd742;
+  letter-spacing: 0.4px;
+}
+
+.offer-image-options {
+  height: 32px;
+  border-radius: 10px;
+  border: none;
+  background: #efd742;
+  color: #f3252e;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
 .customizations-page {
   width: min(360px, 100%);
   min-height: calc(100vh - 72px);
