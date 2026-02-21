@@ -99,7 +99,7 @@ const hamburgers: HamburgerItem[] = [
     menuName: 'Royal Chicken Natche',
     title: 'Royal Chicken Natche',
     introDescription: 'الملكية بامتياز',
-    description: 'قطعة سميكة من الدجاج المغطى بالبسقماط مع شريحة جبن مدخن، خس، بندورة، مايونيز',
+    description: 'قطعة سميكة من الدجاج المغطى بالبسقماط مع شريحة حبش، خس، بندورة، مايونيز',
     price: '600,000 LL',
     listImage: royalChickenNatcheImage,
     detailsImage: royalChickenNatcheMainImage,
