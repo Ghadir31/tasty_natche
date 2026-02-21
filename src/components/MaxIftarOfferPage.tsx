@@ -29,8 +29,8 @@ function MaxIftarOfferPage() {
         </div>
         <div className="offer-details-cta">
           <strong className="offer-details-price">1,250,000 LL</strong>
-          <button className="offer-details-order" type="button">
-            ORDER NOW
+          <button className="offer-details-order" type="button" onClick={() => navigate('/options')}>
+            OPTIONS
           </button>
         </div>
       </div>

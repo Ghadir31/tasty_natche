@@ -16,8 +16,9 @@ import SaucesMenu from './components/SaucesMenu'
 import TopBar from './components/TopBar'
 import IntroAnimation from './components/IntroAnimation'
 import OffersMenu from './components/OffersMenu'
-import IftarOfferPage from './components/IftarOfferPage'
-import MaxIftarOfferPage from './components/MaxIftarOfferPage'
+import IftarOfferImagePage from './components/IftarOfferImagePage'
+import MaxIftarOfferImagePage from './components/MaxIftarOfferImagePage'
+import CustomizationsPage from './components/CustomizationsPage'
 
 function AppContent() {
   const location = useLocation()
@@ -60,8 +61,9 @@ function AppContent() {
         <Route path="/salads/:saladId" element={<SaladItemPage />} />
         <Route path="/sauces" element={<SaucesMenu />} />
         <Route path="/offers" element={<OffersMenu />} />
-        <Route path="/offers/iftar-meal-offer" element={<IftarOfferPage />} />
-        <Route path="/offers/max-iftar-meal-offer" element={<MaxIftarOfferPage />} />
+        <Route path="/offers/iftar-meal-offer" element={<IftarOfferImagePage />} />
+        <Route path="/offers/max-iftar-meal-offer" element={<MaxIftarOfferImagePage />} />
+        <Route path="/options" element={<CustomizationsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/location" element={<LocationPage />} />

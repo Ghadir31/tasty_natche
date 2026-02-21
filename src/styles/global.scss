@@ -1001,6 +1001,148 @@ button {
   cursor: pointer;
 }
 
+.offer-image-page {
+  position: relative;
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.offer-image-back {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.offer-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.offer-image-overlay {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 12px;
+}
+
+.offer-image-price {
+  font-size: 24px;
+  font-weight: 800;
+  color: #efd742;
+  letter-spacing: 0.4px;
+}
+
+.offer-image-options {
+  height: 32px;
+  border-radius: 10px;
+  border: none;
+  background: #efd742;
+  color: #f3252e;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+.customizations-page {
+  width: min(360px, 100%);
+  min-height: calc(100vh - 72px);
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px 18px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.customizations-header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.customizations-content {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 8px 6px 0;
+  align-items: flex-end;
+  text-align: left;
+  width: 100%;
+}
+
+.customizations-title {
+  margin: 0;
+  font-family: 'Oswald', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: #121212;
+  text-align: left;
+}
+
+.customizations-list {
+  margin: 0 0 0 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+  color: #1a1a1a;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: left;
+  list-style: none;
+}
+
+.customizations-list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.customizations-list li::after {
+  content: '•';
+  font-size: 20px;
+  line-height: 1;
+  color: #1a1a1a;
+}
+
+.customizations-order-btn {
+  align-self: center;
+  margin-top: 40px;
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  background: #efd742;
+  color: #f3252e;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 80px;
+  cursor: pointer;
+}
+
+.sauces-page .customizations-order-btn {
+  display: block;
+  margin: 24px auto 0;
+}
+
 .sauces-page {
   width: min(360px, 100%);
   min-height: calc(100vh - 72px);
