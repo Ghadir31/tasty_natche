@@ -2,10 +2,12 @@ import { useNavigate } from 'react-router-dom'
 
 import offerNormal from '../assets/images/general/offer-normal-ramadan.png'
 import offerMax from '../assets/images/general/offer-max-ramadan.png'
+import ahlaWSahlaOffer from '../assets/images/offers/ahla-w-sahla-meal.jpeg'
 
 const offers = [
   { id: 'iftar-meal-offer', title: 'وجبة افطار', listImage: offerNormal },
   { id: 'max-iftar-meal-offer', title: 'وجبة افطار Max', listImage: offerMax },
+  { id: 'ahla-w-sahla-offer', title: 'Ahla W Sahal Offer', listImage: ahlaWSahlaOffer },
 ]
 
 function OffersMenu() {
@@ -29,13 +31,7 @@ function OffersMenu() {
             className="salad-row"
             type="button"
             aria-label={item.title}
-            onClick={
-              item.id === 'iftar-meal-offer'
-                ? () => navigate(`/offers/${item.id}`)
-                : item.id === 'max-iftar-meal-offer'
-                  ? () => navigate(`/offers/${item.id}`)
-                  : undefined
-            }
+            onClick={() => navigate(`/offers/${item.id}`)}
           >
             <span className="salad-row__icon-wrap offers-row__icon-wrap">
               <img src={item.listImage} alt="" aria-hidden="true" />

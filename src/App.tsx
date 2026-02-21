@@ -18,6 +18,7 @@ import IntroAnimation from './components/IntroAnimation'
 import OffersMenu from './components/OffersMenu'
 import IftarOfferImagePage from './components/IftarOfferImagePage'
 import MaxIftarOfferImagePage from './components/MaxIftarOfferImagePage'
+import AhlaWSahlaOfferImagePage from './components/AhlaWSahlaOfferImagePage'
 import CustomizationsPage from './components/CustomizationsPage'
 
 function AppContent() {
@@ -63,6 +64,7 @@ function AppContent() {
         <Route path="/offers" element={<OffersMenu />} />
         <Route path="/offers/iftar-meal-offer" element={<IftarOfferImagePage />} />
         <Route path="/offers/max-iftar-meal-offer" element={<MaxIftarOfferImagePage />} />
+        <Route path="/offers/ahla-w-sahla-offer" element={<AhlaWSahlaOfferImagePage />} />
         <Route path="/options" element={<CustomizationsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
