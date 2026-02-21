@@ -7,6 +7,7 @@ import drink from '../assets/images/home-menu/dring.png'
 import sauce from '../assets/images/home-menu/sauce.png'
 import kids from '../assets/images/home-menu/kids_meal.png'
 import hearts from '../assets/images/home-menu/hearts.png'
+import offersIcon from '../assets/images/home-menu/offers.png'
 
 const menuItems = [
   { label: 'البرغر', image: burger },
@@ -16,6 +17,7 @@ const menuItems = [
   // { label: 'الحلويات', image: dessert },
   { label: 'الصلصات', image: sauce },
   { label: 'وجبة للاطفال', image: kids },
+  { label: 'العروضات', image: offersIcon },
 ]
 
 function Home() {
@@ -27,6 +29,7 @@ function Home() {
     3: '/drinks',
     4: '/sauces',
     5: '/kids',
+    6: '/offers',
   }
 
   return (
