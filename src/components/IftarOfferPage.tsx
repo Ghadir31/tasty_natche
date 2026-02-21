@@ -14,7 +14,7 @@ function IftarOfferPage() {
       </header>
 
       <div className="offer-details-content">
-        <h1 className="offer-details-title">وجبة الافطار</h1>
+        <h1 className="offer-details-title">وجبة افطار</h1>
         <ul className="offer-details-list">
           <li>1 دوبل بيف</li>
           <li>1 ميني تشكن</li>

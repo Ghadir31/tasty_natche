@@ -4,8 +4,8 @@ import offerNormal from '../assets/images/general/offer-normal-ramadan.png'
 import offerMax from '../assets/images/general/offer-max-ramadan.png'
 
 const offers = [
-  { id: 'iftar-meal-offer', title: 'Iftar Meal Offer', listImage: offerNormal },
-  { id: 'max-iftar-meal-offer', title: 'Max Iftar Meal Offer', listImage: offerMax },
+  { id: 'iftar-meal-offer', title: 'وجبة افطار', listImage: offerNormal },
+  { id: 'max-iftar-meal-offer', title: 'وجبة افطار Max', listImage: offerMax },
 ]
 
 function OffersMenu() {
